@@ -15,5 +15,11 @@ public class Main {
 
         System.out.println(u.equals(new Unit(1, 2)));
 
+        System.out.println(new Unit(7, 7).equals(new Unit(7, 7)));
+
+        System.out.println(set.add(new Unit(0,1)));
+        System.out.println(set.add(new Unit(0,0)));
+        System.out.println(set.add(new Unit(0,1)));
+
     }
 }
