@@ -21,5 +21,10 @@ public class Main {
         System.out.println(set.add(new Unit(0,0)));
         System.out.println(set.add(new Unit(0,1)));
 
+        // Коллизия нулевых координат
+        u.setX(0); u.setY(0);
+        Unit u2 = new Unit(99, 99);
+        boolean collision = u.hashCode() == u2.hashCode();
+        System.out.println("Коллизия нулевых координат HashCode() u b u2 равны? " + collision);
     }
 }

@@ -2,14 +2,22 @@ package org.example;
 
 public class Unit {
     public  int x, y;
-    public int[] c;
 
     Unit(){
 
     }
-    Unit(int x, int y){
+    public Unit(int x, int y){
         this.x = x;
         this.y = y;
+
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public void setX(int x) {
@@ -29,7 +37,9 @@ public class Unit {
             return false;
         }
         Unit unit = (Unit) obj;
-        return c == unit.c &&  (x == unit.x && y == unit.y);
+//        return c == unit.c &&  (x == unit.x && y == unit.y);
+        return  (x == unit.x && y == unit.y);
+
     }
     @Override
     public int hashCode() {
